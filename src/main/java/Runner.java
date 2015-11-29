@@ -1,15 +1,12 @@
 import Aliens.Scrap;
 import NASA.NasaRover;
-import NASA.RoverI;
 
 import java.util.Scanner;
 
 public class Runner {
 
     public static void main (String[] args) {
-
-        Scrap scrap = new Scrap();
-        RoverI explorer = new NasaRover();
+        NasaRover explorer = new NasaRover();
 
         boolean found = false;
         Scanner keyboard = new Scanner(System.in);
@@ -23,7 +20,8 @@ public class Runner {
             int a = keyboard.nextInt();
             System.out.print("b: ");
             int b = keyboard.nextInt();
-            found = explorer.move(a,b);
+            int [] target = {a,b};
+            found = explorer.move(target);
             System.out.println();
             if (found) {
                 break;
