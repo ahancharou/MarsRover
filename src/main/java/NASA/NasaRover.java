@@ -23,7 +23,7 @@ public class NasaRover {
     public boolean move (int[] target) {
         boolean found = false;
 
-        for (int i=0; i!=2; i++){
+        for (int i=0; i!=coordinates.size(); i++){
             int m = target[i];
 
             while(!coordinates.get(i).reached(m)){

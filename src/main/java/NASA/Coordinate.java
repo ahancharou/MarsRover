@@ -9,12 +9,10 @@ public class Coordinate {
     }
 
     public void step(int target){
-        if (!reached(target)) {
-            if (value > target){
-                value--;
-            } else {
-                value++;
-            }
+        if (value > target){
+            value--;
+        } else {
+            value++;
         }
     }
 

@@ -7,8 +7,8 @@ public class Scrap {
 
     public Scrap() {
         Random random = new Random();
-        place[0] =5;// random.nextInt(10); // 0 to 9
-        place[1] =5;// random.nextInt(10);
+        place[0] = random.nextInt(10); // 0 to 9
+        place[1] = random.nextInt(10);
     }
 
     public boolean check(int[] spot){
