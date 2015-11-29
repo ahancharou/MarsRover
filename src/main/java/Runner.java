@@ -1,4 +1,3 @@
-import Aliens.Scrap;
 import NASA.NasaRover;
 
 import java.util.Scanner;

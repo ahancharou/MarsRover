@@ -3,16 +3,15 @@ package Aliens;
 import java.util.Random;
 public class Scrap {
 
-    private int x;
-    private int y;
+    private int[] place = {0,0};
 
     public Scrap() {
         Random random = new Random();
-        this.x = random.nextInt(10); // 0 to 9
-        this.y = random.nextInt(10);
+        place[0] =5;// random.nextInt(10); // 0 to 9
+        place[1] =5;// random.nextInt(10);
     }
 
-    public boolean check(int x, int y){
-        return (this.x == x)&&(this.y == y);
+    public boolean check(int[] spot){
+        return (place[0]==spot[0]&&place[1]==spot[1]);
     }
 }

@@ -38,8 +38,7 @@ public class NasaRover {
     }
 
     private boolean search(){
-        int[] coordinates = getCoordinates();
-        return alienScrap.check(coordinates[0],coordinates[1]);
+;        return alienScrap.check(getCoordinates());
     }
 
     public int[] getCoordinates () {
